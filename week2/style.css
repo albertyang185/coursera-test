@@ -1,0 +1,108 @@
+.h1-l-c {
+    text-align: center;
+    font-size: 30px;
+    margin: 35px 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.h4-l {
+    text-align: center;
+    width: 160px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    top: 0;
+    right: 0;
+}
+
+.h4-l-inv {
+    text-align: center;
+    width: 160px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    top: 0;
+    right: 0;
+    color: white;
+}
+
+.row-1 {
+    position: relative;
+}
+
+.t-r {
+    position: relative;
+}
+
+.b-nt {
+    border-width: 0px 0px 1px 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.b-2 {
+    border-style: solid;
+    border-width: 1px;
+}
+
+p {
+    margin-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 17px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pink {
+    background-color: #d69898;
+}
+
+.red {
+    background-color: #c14543;
+}
+
+.yellow {
+    background-color: #e5d198;
+}
+
+.gray {
+    background-color: #999999;
+}
+
+@media (min-width: 992px) {
+    .col-1 {
+        margin: 0px 10px 20px 10px;
+        padding: 0px;
+        float: left;
+        width: 28%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-2-t {
+        margin: 0px 10px 20px 10px;
+        padding: 0px;
+        float: left;
+        width: 45%;
+    }
+    .col-2-b {
+        margin: 10px 10px 20px 10px;
+        padding: 0px;
+        float: left;
+        width: 92.8%;
+    }
+}
+
+@media (max-width: 767px) {
+    .col-v {
+        margin: 10px 10px 20px 10px;
+        padding: 0px;
+        float: left;
+        width: 90%;
+    }
+}
