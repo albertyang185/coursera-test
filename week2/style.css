@@ -7,7 +7,7 @@
 
 .h1-l-c-alt {
     text-align: left;
-    font-size: 25px;
+    font-size: 20px;
     margin: 20px 5px 15px 12px;
     font-family: "Times New Roman", Times, serif;
 }
@@ -53,7 +53,7 @@ p {
 }
 
 .gray {
-    background-color: #999999;
+    background-color: #fce72a;
 }
 
 @media (min-width: 992px) {
