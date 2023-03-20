@@ -14,6 +14,16 @@
         return inputStr.split(seperator);
     }
 
+    var getCount = (inputArr) => {
+        var noneEmptyCount = 0;
+        inputArr.forEach(element => {
+             if (/\S/.test(element)){
+                noneEmptyCount +=1;
+            }
+        });
+        return noneEmptyCount;
+    }
+
     var countToMessage = (count) => {
 
         if (count < 1) {
@@ -52,8 +62,10 @@
         $scope.messageColor = {};
         $scope.lunchCheck = () => {
             let lunchesArr = strToArr($scope.lunches);
-            $scope.message = countToMessage(lunchesArr.length);
-            let color = countToColor(lunchesArr.length);
+            debugger;
+            let count = getCount(lunchesArr);
+            $scope.message = countToMessage(count);
+            let color = countToColor(count);
             $scope.boarderColor = boarderWrapper(color);
             $scope.messageColor = colorWrapper(color);
         }
