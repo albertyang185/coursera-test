@@ -14,6 +14,8 @@
         return inputStr.split(seperator);
     }
 
+    //function to validate if any input elment is empty
+    //returns total count of non-empty elements 
     var getCount = (inputArr) => {
         var noneEmptyCount = 0;
         inputArr.forEach(element => {
