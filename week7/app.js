@@ -96,11 +96,11 @@ function createItem( _name, _quantity, _pricePerItem )
 function prePopulated()
 {
     var result = [];
-        result.push( createItem( 'apple', 3, 0.99 ) );
-        result.push( createItem( 'banana', 10, 0.50 ) );
-        result.push( createItem( 'orange', 5, 0.75 ) );
-        result.push( createItem( 'peach', 8, 1.43 ) );
-        result.push( createItem( 'watermelon', 2, 2.99 ) );
+        result.push( createItem( 'apples', 3, 0.99 ) );
+        result.push( createItem( 'bananas', 10, 0.50 ) );
+        result.push( createItem( 'oranges', 5, 0.75 ) );
+        result.push( createItem( 'peaches', 8, 1.43 ) );
+        result.push( createItem( 'melons', 2, 2.99 ) );
     return result;
 }
 })();
