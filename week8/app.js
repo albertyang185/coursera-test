@@ -50,7 +50,7 @@
     };
 
     menu.removeItem = function(index) {
-      console.log('index'+index);
+   
       menu.found.splice(index, 1);
     };
 
@@ -76,7 +76,7 @@
           result.data[property].menu_items.forEach(item => {
             if(item.description.toLowerCase().indexOf(searchTerm.toLowerCase()) !== -1){
               foundItems.push(item);
-              console.log(item);
+            
             }
           }); 
         }
