@@ -1,15 +1,4 @@
 Module 3 Coding Assignment
-=======
-[Click here to SIGN UP for the ***Single Page Web Applications with AngularJS*** course on Coursera](https://www.coursera.org/learn/single-page-web-apps-with-angularjs). It's FREE!
-
-**Time to put all that knowledge to code!**
-
-## Time to Complete
-It should take about 1 hour or less. (This is just an estimate. People's backgrounds differ, so for some people it will take longer to complete.)
-
-**Ask questions in [Week 3 Discussion Forum](https://www.coursera.org/learn/single-page-web-apps-with-angularjs/discussions/weeks/3) if you get stuck! We are all learning, and going through getting stuck and then unstuck (even with someone’s help) can be a very valuable learning experience!**
-
-### **DO NOT be scared by the length of this assignment! It’s actually a fairly short one. I just wanted to explain everything as clearly as I could and break it down into smaller steps for your benefit.**
 
 
 ## Assignment Instructions
@@ -55,7 +44,16 @@ Here is what you will need to do to complete the assignment:
 1. Declare `ng-app` either on the `html` or the `body` element. Name your app `NarrowItDownApp`.
 2. Create `app.js` in your project and declare an Angular module to match your `ng-app` declaration.
 3. Declare and create a NarrowItDownController (with controller as syntax) that will wrap your search textbox and button as well as the list of found items.
-4. Declare and create MenuSearchService. The service should have the following method: getMatchedMenuItems(searchTerm). That method will be responsible for reaching out to the server (using the $http service) to retrieve the list of all the menu items. Once it gets all the menu items, it should loop through them to pick out the ones whose description matches the searchTerm. Once a list of found items is compiled, it should return that list (wrapped in a promise). Remember that the `then` function itself returns a promise. Your method would roughly look like this:
+
+4. Declare and create MenuSearchService. The service should have the following method: 
+
+    getMatchedMenuItems(searchTerm). 
+    
+    That method will be responsible for reaching out to the server (using the $http service) to retrieve the list of all the menu items. 
+    Once it gets all the menu items, it should loop through them to pick out the ones whose description matches the searchTerm. 
+    Once a list of found items is compiled, it should return that list (wrapped in a promise). 
+    Remember that the `then` function itself returns a promise. Your method would roughly look like this:
+
   ```javascript
   return $http(...).then(function (result) {
       // process result and only keep items that match

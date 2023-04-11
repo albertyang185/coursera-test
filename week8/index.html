@@ -6,19 +6,34 @@
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-<body>
-   <div class="container">
-    <h1>Narrow Down Your Chinese Menu Choice</h1>
+<body ng-app="NarrowItDownApp">
+   <div class="container" ng-controller='NarrowItDownController as menu'>
+    <h1>Narrow Down Your Chinese Menu Choices</h1>
 
-    <div class="form-group">
-      <input type="text" placeholder="search term" class="form-control">
-    </div>
-    <div class="form-group narrow-button">
-      <button class="btn btn-primary">Narrow It Down For Me!</button>
+
+    <div class="container text-center" style="margin-bottom: 15px" >
+      <div class="row justify-content-start">
+        <div class="col-2">
+          <div class="form-group">
+            <input type="text" placeholder="search term" class="form-control" ng-model="menu.searchTerm">
+          </div>
+        </div>
+     
+        <div class="col-3">
+          <div class="form-group narrow-button">
+            <button class="btn btn-primary" ng-click="menu.search(menu.searchTerm);">Narrow It Down For Me!</button>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <found-items found-items="...." on-remove="...."></found-items>
+    
+    <div class="row justify-content-start">
+  <found-items items="menu.found" on-remove="menu.removeItem(index)"></found-items>
+</div>
+   
   </div>
-
+  <script src="angular.min.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
