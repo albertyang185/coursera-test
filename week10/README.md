@@ -1,3 +1,9 @@
+
+# week 10 
+
+This is code for week 10 assignment. 
+
+
 # Restaurant
 
 Restaurant front-end implementation in AngularJS for David Chu's China Bistro.
