@@ -1,0 +1,79 @@
+<div class="container" ng-if="!myinfo.is_registered">
+  <p>Not Signed Up Yet! Sign up Now!</p>
+  <a ui-sref="public.signup"><h3>Sign up</h3></a>
+</div>
+
+
+<div class="container" ng-if="myinfo.is_registered">
+  <div class="row justify-content-md-center">
+    <div class=" col col-lg-2">
+      <p class="text-muted" >First name</p>
+    </div>
+    <div class=" col col-lg-2">
+      {{ myinfo.user.firstname }}
+    </div>
+  </div><br>
+
+
+  <div class="row justify-content-md-center">
+    <div class=" col col-lg-2">
+      <p class="text-muted" >Last name</p>
+    </div>
+    <div class=" col col-lg-2">
+      {{ myinfo.user.lastname }}
+    </div>
+  </div><br>
+
+
+  <div class="row justify-content-md-center">
+    <div class=" col col-lg-2">
+      <p class="text-muted" >Email</p>
+    </div>
+    <div class=" col col-lg-2">
+      {{ myinfo.user.email }}
+    </div>
+  </div><br>
+
+
+  <div class="row justify-content-md-center">
+    <div class=" col col-lg-2">
+      <p class="text-muted" >Phone</p>
+    </div>
+    <div class=" col col-lg-2">
+      {{ myinfo.user.phone }}
+    </div>
+  </div><br>
+
+  <h3 class="text-muted" >My favorite menu item:</h3>
+  <div class="row justify-content-md-center">
+    <div class=" col col-lg-2">
+      <p class="text-muted" >Name:</p>
+    </div>
+    <div class=" col col-lg-2">
+      {{ myinfo.user.favorite_menu_item.name }}
+    </div>
+  </div><br>
+
+  <div class="row justify-content-md-center">
+    <div class=" col col-lg-2">
+      <p class="text-muted" >Description:</p>
+    </div>
+    <div class=" col col-lg-2">
+      {{ myinfo.user.favorite_menu_item.description }}
+    </div>
+  </div><br>
+
+  <div class="row justify-content-md-center">
+    <div class=" col col-lg-2">
+      <p class="text-muted" >price:</p>
+    </div>
+    <div class=" col col-lg-2">
+      Large:$ {{ myinfo.user.favorite_menu_item.price_large }}
+      Small:$ {{ myinfo.user.favorite_menu_item.price_large }}
+      
+      
+    </div><br><br>
+    <img class="img-responsive" width="250" height="150" ng-src="images/menu/{{myinfo.user.favorite_menu_item.category}}/{{myinfo.user.favorite_menu_item.short_name}}.jpg" alt="{{myinfo.user.favorite_menu_item.name}}">
+  </div>
+
+</div>
