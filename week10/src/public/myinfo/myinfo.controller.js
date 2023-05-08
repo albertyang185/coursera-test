@@ -12,10 +12,10 @@ function MyinfoController(MenuService, UserinfoService) {
     myinfo.user =  UserinfoService.getUserinfo();
  
     if(myinfo.user != undefined && myinfo.user.favorite_menu_item != undefined){ 
-      console.log('check_registered passed'+JSON.stringify( myinfo.user));
+      //console.log('check_registered passed'+JSON.stringify( myinfo.user));
       return true;
     }else{
-      console.log('check_registered false');
+      //console.log('check_registered false');
       return false;
     }
     
